@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/29eac6c5fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ZOO</title>
+
+    <link rel="shortcut icon" href="img/logo.jpg" />
+  </head>
+
+  <body>
+    <div class="fondo">
+      <img
+        src="https://files.worldwildlife.org/wwfcmsprod/images/peruvian_amazon_sunset_WW1103396_Day_s_Edge_Productions/story_full_width/3e6tuqnnvb_Medium_WW1103396.jpg"
+        alt="fondo"
+      />
+    </div>
+    <div class="fondo_Color"></div>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg container_Nav position-fixed">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">HOME</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#GaleriaA">OUR GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="#eventos"
+                >EVENTOS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="#aboutus"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#aboutus">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carts Animals start-->
+    <section id="animales">
+      <div>
+        <h1 style="text-align: center">Animales mas Populares</h1>
+        <div class="d-flex gap-4 m-3 content_Cards_Animal">
+          <div class="card_Animal">
+            <div class="avatar">
+              <img
+                src="https://i.pinimg.com/564x/48/44/30/484430d69f84d865a33edca68ba213bd.jpg"
+                alt="Guacamallo"
+              />
+            </div>
+            <strong>Guacamallo</strong>
+          </div>
+
+          <div class="card_Animal">
+            <div class="avatar">
+              <img
+                src="https://i.pinimg.com/736x/e9/8e/cd/e98ecd43fc010028b35b46cc7e087239.jpg"
+                alt="Leon"
+              />
+            </div>
+            <strong>Leon</strong>
+          </div>
+
+          <div class="card_Animal">
+            <div class="avatar">
+              <img
+                src="https://i.pinimg.com/564x/84/a2/52/84a252e1accabb7ec3e0844614fcb4e0.jpg"
+                alt="Panda"
+              />
+            </div>
+            <strong>Panda</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--Carts Animals end-->
+    <section id="GaleriaA">
+
+      <!--Gallery-->
+      <div class="container">
+        <h1 class="mt-5" style="text-align: center">Galería de animales</h1>
+
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img
+              src="https://www.anipedia.net/imagenes/animal-salvaje-el-leon.jpg"
+              alt="Imagen 1"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="Imagen 2"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://okdiario.com/img/2020/06/24/diferencias-entre-animales-domesticos-y-salvajes-1-655x368.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://definicion.de/wp-content/uploads/2012/10/animal-salvaje.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://www.anaaweb.org/wp-content/uploads/2018/08/ANAA-diferencia-entre-animales-salvajes-y-domesticos.jpg"
+              alt="Imagen 5"
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://s1.significados.com/foto/orangutanes.jpg"
+              alt="Imagen 5"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    
+    <!--End Gallery-->
+    </section>
+
+    <!-- HORARIOS -->
+    <section id="eventos" class="mt-4">
+      <h2 style="text-align: center">Próximos Eventos</h2>
+      <!-- Lista de eventos -->
+      <ul class="list-group">
+        <li class="list-group-item" style="text-align: left">
+          <h4>Día de Educación Ambiental</h4>
+          <p><strong>Fecha:</strong> 15 de Enero</p>
+          <p>
+            <strong>Actividades:</strong> Charlas programadas durante todo el
+            día, presentaciones cada hora y actividades interactivas para los
+            visitantes.
+          </p>
+        </li>
+
+        <li
+          class="list-group-item"
+          style="flex-direction: row-reverse; text-align: right"
+        >
+          <h4>Festival de Arte y Naturaleza</h4>
+          <p><strong>Fecha:</strong> 5 al 7 de febrero</p>
+          <p>
+            <strong>Actividades:</strong> Exposición de arte durante todo el fin
+            de semana, talleres de arte diarios, presentaciones de música y
+            danza al aire libre.
+          </p>
+        </li>
+
+        <li class="list-group-item" style="text-align: left">
+          <h4>Ciclo de Conferencias Científicas</h4>
+          <p><strong>Fecha:</strong> 8 al 12 de abril</p>
+          <p>
+            <strong>Actividades:</strong> Conferencias diarias a cargo de
+            expertos en biología, ecología y conservación, con tiempo para
+            preguntas y respuestas del público.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="text-reset" style="text-decoration: none">
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section id="aboutus">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>About Us
+              </h6>
+              <p>
+                Bienvenido a Zoo Park, un refugio dedicado a la maravilla de la
+                vida salvaje y a la promoción de la conservación y educación
+                ambiental. Desde nuestra apertura nos hemos comprometido a
+                proporcionar una experiencia única que celebre la diversidad de
+                la fauna y contribuya a la comprensión y preservación de nuestro
+                precioso planeta.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <p><i class="fas fa-home me-3"></i> Sangolqui, Ecuador.</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 593 099932135</p>
+              <p><i class="fas fa-print me-3"></i> + 593 097665431</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4 footer-bg">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="#">Grupo4.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
