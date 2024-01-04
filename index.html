@@ -69,7 +69,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#aboutus">CONTACT US</a>
+              <a class="nav-link text-light" href="#contactus">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -78,13 +78,11 @@
 
     <!--Carts Animals start-->
     <section id="animales">
-        <h1 class="h1" style="text-align: center">Animales mas Populares</h1>
-        <div id="cards" class="d-flex gap-4 m-3 content_Cards_Animal">
-        </div>
+      <h1 class="h1" style="text-align: center">Animales mas Populares</h1>
+      <div id="cards" class="d-flex gap-4 m-3 content_Cards_Animal"></div>
     </section>
-      <!--Carts Animals end-->
+    <!--Carts Animals end-->
     <section id="GaleriaA">
-
       <!--Gallery-->
       <div class="container">
         <h1 class="mt-5" style="text-align: center">Galería de animales</h1>
@@ -139,8 +137,8 @@
           </div>
         </div>
       </div>
-    
-    <!--End Gallery-->
+
+      <!--End Gallery-->
     </section>
 
     <!-- HORARIOS -->
@@ -183,47 +181,70 @@
       </ul>
     </section>
 
+    <section class="form" id="contactus">
+      <div class="container">
+        <div class="brand-logo">
+          <img src="img/logo.jpg" height="100px" width="100px" alt="" />
+        </div>
+        <div class="brand-title">Contáctanos</div>
+        <div class="inputs">
+          <label>Nombre:</label>
+          <input type="text" placeholder="Juan Ramirez" />
+          <label>Email:</label>
+          <input type="email" placeholder="example@test.com" />
+          <label>Mensaje: </label>
+          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          <button type="submit">Enviar</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <footer
+      id="aboutus"
+      class="text-center text-lg-start bg-body-tertiary text-muted"
+    >
       <!-- Section: Social media -->
       <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        class="d-flex justify-content-center footer-bg justify-content-lg-between p-4"
       >
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+          <span>Conecta con nosotros en nuestras redes sociales:</span>
         </div>
         <!-- Left -->
 
         <!-- Right -->
-        <div class="text-reset" style="text-decoration: none">
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+        <!-- <div class="text-reset" style="text-decoration: none"> -->
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- </div> -->
         <!-- Right -->
       </section>
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section id="aboutus">
-        <div class="container text-center text-md-start mt-5">
+      <section id="footer">
+        <div class="container text-center text-md-start mt-4">
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>About Us
+                <i class="fas fa-gem me-3"></i>Sobre Nosotros
               </h6>
-              <p>
+              <p align="justify-content-center">
                 Bienvenido a Zoo Park, un refugio dedicado a la maravilla de la
                 vida salvaje y a la promoción de la conservación y educación
                 ambiental. Desde nuestra apertura nos hemos comprometido a
@@ -237,18 +258,18 @@
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Secciones de Animales</h6>
               <p>
-                <a href="#!" class="text-reset">Angular</a>
+                <a href="#!" class="text-reset">Leones</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">React</a>
+                <a href="#!" class="text-reset">Elefantes</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Vue</a>
+                <a href="#!" class="text-reset">Lobos</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Laravel</a>
+                <a href="#!" class="text-reset">Monos</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -256,18 +277,18 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Documentos</h6>
               <p>
-                <a href="#!" class="text-reset">Pricing</a>
+                <a href="#!" class="text-reset">Conducta Zoo Park</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Settings</a>
+                <a href="#!" class="text-reset">Terminos y Condiciones</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Orders</a>
+                <a href="#!" class="text-reset">Politicas</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Help</a>
+                <a href="#!" class="text-reset">Donaciones</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -275,7 +296,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
               <p><i class="fas fa-home me-3"></i> Sangolqui, Ecuador.</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
