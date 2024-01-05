@@ -32,4 +32,37 @@ const cargarAnimales = async () => {
     }
   };
 
+ScrollReveal().reveal('#animales',
+{
+  delay:400,
+  origin:"top",
+  distance: '10rem',
+  easing: 'cubic-bezier(.15,0,.22,1.07)',
+  reset:true
+}
+)
+ScrollReveal().reveal("#GaleriaA",{
+  delay:400,
+  origin:"left",
+  distance: '30rem',
+  easing: 'cubic-bezier(.15,0,.22,1.07)',
+  reset:true
+})
+
+ScrollReveal().reveal("#eventos",{
+  delay:400,
+  origin:"top",
+  distance: '30rem',
+  easing: 'cubic-bezier(.15,0,.22,1.07)',
+  reset:true
+})
+
+ScrollReveal().reveal("#horariosV",{
+  delay:400,
+  origin:"bottom",
+  distance: '30rem',
+  easing: 'cubic-bezier(.15,0,.22,1.07)',
+  reset:true
+})
+
 cargarAnimales();

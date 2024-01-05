@@ -20,7 +20,6 @@
   align-items: center;
   animation: rotateCoin 30s infinite linear;
 }
-
 footer .footer-bg {
   background-color: #333f05;
   color: white;
@@ -34,7 +33,12 @@ footer .footer-bg {
 .container_Nav {
   background-color: #333f05;
   z-index: 10;
+  display: flex;
   width: 100vw;
+}
+
+.buttonD{
+  width: 20%;
 }
 
 .content_Cards_Animal {
@@ -50,17 +54,21 @@ footer .footer-bg {
 
 .gallery-item {
   width: calc(33.33% - 20px);
+  height: 30rem;
   margin: 10px;
-  transition: 1s all ease-in;
+  overflow: hidden;
+  border-radius: 10%;
+  transition: .6s all ease-in;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
+
 }
 
 .gallery-item:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .fondo {
@@ -110,11 +118,18 @@ section {
     transform: scale(0.9);
     flex-wrap: wrap;
   }
+  .gallery-item {
+    height: 10rem;
+  }
+  .gallery-item img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 @media screen and (max-width: 375px) {
   .content_Cards_Animal {
     position: relative;
-    transform: scale(0.68);
+    transform: scale(0.56);
     flex-wrap: wrap;
   }
   .h1 {
@@ -131,9 +146,14 @@ input {
   caret-color: red;
 }
 
+#eventos{
+  overflow: hidden;
+  width: 100%;
+  padding: 4rem;
+}
 .form {
   margin: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background: #4C5420;
   display: flex;
