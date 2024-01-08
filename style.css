@@ -149,8 +149,13 @@ input {
 #eventos{
   overflow: hidden;
   width: 100%;
-  padding: 4rem;
+  padding: 4rem;  
 }
+
+.list-group {
+  border: solid rgb(76, 84, 32);
+}
+
 .form {
   margin: 0;
   width: 100%;
@@ -167,7 +172,7 @@ input {
 
 .form .container {
   position: relative;
-  width: 350px;
+  min-width: 550px;
   min-height: 500px;
   border-radius: 20px;
   padding: 40px;
@@ -261,4 +266,8 @@ textarea {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.card-header {
+  background-color: #333f05 !important;
 }
